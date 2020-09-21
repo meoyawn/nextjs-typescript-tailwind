@@ -3,7 +3,7 @@ import React, { useEffect } from "react"
 import { AppProps } from 'next/app'
 import { initialize as analyticsInit, pageview } from 'react-ga'
 
-import Container from '../components/Layout'
+import Layout from '../components/Layout'
 
 
 // noinspection JSUnusedGlobalSymbols
@@ -20,8 +20,8 @@ export default function MyApp({ Component, pageProps, router }: AppProps): JSX.E
   }
 
   return (
-    <Container>
+    <Layout>
       <Component {...pageProps} />
-    </Container>
+    </Layout>
   )
 }
