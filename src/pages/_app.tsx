@@ -5,7 +5,6 @@ import { initialize as analyticsInit, pageview } from 'react-ga'
 
 import Layout from '../components/Layout'
 
-
 // noinspection JSUnusedGlobalSymbols
 export default function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
 
