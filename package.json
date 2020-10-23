@@ -6,8 +6,7 @@
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.6.2",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-ga": "^3.1.2"
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@tailwindcss/ui": "^0.6.0",
