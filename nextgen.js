@@ -45,7 +45,7 @@ function genSitemap() {
   sitemap.pipe(fs.createWriteStream(path.join("public", "sitemap.xml")))
 }
 
-function genManifest() {
+async function genManifest() {
   const icons = [
     {
       src: "/manifest/icon-192x192.png",
@@ -60,10 +60,10 @@ function genManifest() {
   ]
 
   const icon = sharp("src/images/icon.png")
-  icons.forEach(({ src, sizes }) => {
+  await Promise.all(icons.map(({ src, sizes }) => {
     const [w, h] = sizes.split("x").map(s => parseInt(s))
     icon.resize(w, h).toFile(`public${src}`)
-  })
+  }))
 
   const manifest = {
     name: dotEnv.SITE_NAME,
@@ -75,5 +75,7 @@ function genManifest() {
   fs.writeFileSync(`public${dotEnv.MANIFEST}`, JSON.stringify(manifest))
 }
 
-genSitemap()
-genManifest()
+(async () => {
+  genSitemap()
+  await genManifest()
+})()
