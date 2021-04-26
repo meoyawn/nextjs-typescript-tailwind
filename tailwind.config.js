@@ -3,7 +3,7 @@ module.exports = {
   mode: 'jit',
   darkMode: 'media',
   plugins: [
-
+    require('@tailwindcss/forms'),
   ],
   purge: {
     content: [
