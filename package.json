@@ -4,7 +4,8 @@
     "classnames": "^2.2.6",
     "next": "^10.0.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-hook-form": "^7.3.4"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.3.2",
