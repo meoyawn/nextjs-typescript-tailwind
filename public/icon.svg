@@ -1,0 +1,18 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+>
+    <circle cx="50" cy="50" r="50"/>
+    <text
+            x="50"
+            y="58"
+            fill="white"
+            stroke="white"
+            stroke-width="1"
+            font-size="24"
+            font-weight="900"
+            text-anchor="middle"
+    >
+        START
+    </text>
+</svg>

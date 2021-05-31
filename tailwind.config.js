@@ -4,14 +4,13 @@ module.exports = {
   darkMode: 'media',
   plugins: [
     require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
   ],
   purge: {
     content: [
       './src/**/*.{jsx,tsx}'
     ]
   },
-  theme: {
-
-  },
+  theme: {},
   variants: {},
 }
