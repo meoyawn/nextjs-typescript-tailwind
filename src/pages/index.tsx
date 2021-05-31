@@ -5,10 +5,10 @@ import SEO from "../components/SEO";
 // noinspection JSUnusedGlobalSymbols
 export default function Index(): JSX.Element {
   return (
-    <div className='bg-blue-700'>
+    <div className='bg-blue-700 text-white'>
       <SEO title="Start" />
 
-      Index
+      <p>Index</p>
     </div>
   )
 }
